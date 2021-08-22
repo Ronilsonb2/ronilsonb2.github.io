@@ -1,0 +1,436 @@
+
+/*======= CSS NOVOS =======*/
+
+body {
+  line-height: 1.7;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 500px){
+  body{
+    animation: gradient 4s ease alternate infinite;
+    background: linear-gradient(
+      -45deg
+      , #ee7752, #e87ea7, #5e6c53, #4cd2b3) no-repeat;
+    background-size: 600% 600%;
+    font-family: sans-serif;
+
+  }
+
+  @keyframes gradient {
+    0%{
+      background-position: 0 50%;
+    }
+
+    100%{
+      background-position: 100% 50%;
+    }
+
+  }
+}
+h1, h2. h3, h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header-info{
+  position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgb(125, 125, 133);
+}
+.header-info p{
+	text-align: center;
+	font-size: 17px;
+	color: #fff;
+	margin: 10px 0 10px 20px;
+}
+
+.header{
+  top: 45px;
+  position: fixed;
+	width: 100%;
+  box-shadow: 0 10px 8px rgb(0 0 0 / 50%);
+  z-index: 999;
+}
+
+.logo{
+	padding: 20px;
+}
+.logo img{
+	width: 200px;
+}
+
+.nav-link{
+  padding: 10px 0px 0 23px;
+}
+.nav-item a {
+	color: #fff;
+}
+
+.nav-item a:hover {
+	color: #0092c5;
+}
+
+.menu-navegacao .nav{
+	margin-top: 13px;
+}
+
+/* ============MENU MOBILE======== */
+.nav-bar-toggle{
+  width: 50px;
+  height: auto;
+  padding: 4px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: none;
+  border-radius: 5px;
+  background-color: #0090c4;
+}
+
+.nav-bar-toggle .icon{
+  width: 33px;
+  height: 4px;
+  margin: 6px auto;
+  background-color: #fff;
+  margin: 5px auto;
+  display: block;
+  background-color: black;
+}
+
+.nav-bar-toggle .icon{
+  transform: rotate(0deg);
+}
+
+
+.nav-bar-toggle #icon1._open{
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+.nav-bar-toggle #icon2._open{
+  opacity: 0;
+}
+.nav-bar-toggle #icon3._open{
+  transform: translate3d(0, -8px, 0) rotate(-45deg);
+}
+/*=========  */
+
+.site-section{
+    padding: 2rem 0;
+}
+
+.img-servicos{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.block-sevicos1{
+    width: 50%;
+    padding-left: 80px;
+}
+
+.block-sevicos2{
+  width: 50%;
+  padding-right: 80px;
+}
+
+.block-sevicos1, .block-sevicos2{
+    line-height: 2rem;
+}
+
+.block-sevicos1 h2, .block-sevicos2 h2{
+  color: #ff8b00;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.servicos .img-servicos {
+  width: 50%;
+  padding: 0;
+}
+
+/*======= GALERIA =======*/
+/* .galeria .img-galeria {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 212px;
+}
+
+.galeria .img-galeria:hover {
+    border: 1px solid #777;
+}
+
+.galeria .img-galeria img {
+    width: 100%;
+    height: auto;
+}
+
+.img-galeria .desc {
+    padding: 15px;
+    text-align: center;
+} */
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.galeria-flex{
+    display: flex;
+    pad: 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.galeria{
+  box-shadow: 0 10px 33px rgb(27 24 24 / 50%);
+  margin-top: 140px;
+}
+
+.galeria-flex > div {
+    flex: 1 1 240px;
+    margin: 0 10px;
+    border: 1px solid rgb(59, 53, 53);
+    margin-bottom: 20px;
+    background-color: beige;
+}
+.galeria-flex > div > p {
+  margin: 5px auto 5px;
+}
+
+/*======== Perguntas frequentes====== */
+.contato{
+  padding-top: 0 !important;
+}
+.section-title{
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  border: none;
+  border: 1px solid #e6e6e6;
+}
+
+.form-control:hover, .form-control:active, .form-control:focus {
+  border: 1px solid #666;
+}
+
+.desc-contato{
+  padding-left: 3em;
+}
+
+#btn-enviar{
+  padding: 10px 20px !important;
+  float: right;
+}
+
+/* ===========FOOTER ======*/
+.gradient-2, .site-footer, .top-bar {
+  background: #7a5e86;
+  background: -moz-linear-gradient(left, #7a5e86 0%, #a75e67 51%, #f77b2e 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #7a5e86), color-stop(51%, #a75e67), color-stop(100%, #f77b2e));
+  background: -webkit-linear-gradient(left, #7a5e86 0%, #a75e67 51%, #f77b2e 100%);
+  background: -o-linear-gradient(left, #7a5e86 0%, #a75e67 51%, #f77b2e 100%);
+  background: -ms-linear-gradient(left, #7a5e86 0%, #a75e67 51%, #f77b2e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#7a5e86), color-stop(51%, #a75e67), to(#f77b2e));
+  background: linear-gradient(to right, #7a5e86 0%, #a75e67 51%, #f77b2e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7a5e86', endColorstr='#f77b2e', GradientType=1);
+}
+
+.site-footer {
+  z-index: 99999;
+  padding: 2.5em 0;
+}
+
+.site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
+  color: #fff;
+}
+.site-footer .footer-heading {
+  font-size: 16px;
+  color: #fff;
+  padding: 0;
+}
+
+.list-rodape{
+  list-style: none;
+  padding-left: 0;
+}
+
+.site-footer ul li {
+  margin-bottom: 10px;
+}
+
+.site-footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, .5);
+}
+.site-footer a:hover {
+  color: rgba(250, 252, 252, 0.988);
+}
+.form-control {
+  height: 55px;
+  background: #fff !important;
+  font-family: rubik, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+}
+
+.footer-suscribe-form .btn {
+  background: #7a5e86;
+  color: #fff;
+  border-color: #7a5e86;
+}
+
+.site-footer .btn{
+  padding: 0.580rem .75rem;
+}
+.redes-sociais img{
+  width: 10%;
+  max-width: 123px;
+  float: left;
+  padding:0 15px 0 0;
+}
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  text-transform: uppercase;
+}
+
+
+
+/* ==========Medias =============*/
+
+@media (max-width: 990px){
+
+    .nav-bar-toggle{
+      display: block;
+    }
+    .menu-navegacao{
+      display: none;
+      border-top: 1px solid #0090c4;
+      width: 100%;
+    }
+
+    .menu-navegacao._open{
+      display: block;
+    }
+
+    .nav-link {
+      padding: 10px 0px 0 0px;
+  }
+
+    .menu-navegacao .navbar {
+      display: block;
+      width: 100%;
+    }
+
+    .block-sevicos1 {
+      padding: 0 0 0 20px
+  }
+  .block-sevicos2 {
+    padding: 20px 0 0 20px !important;
+  }
+
+  .block-sevicos1 h2, .block-sevicos2 h2{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 780px){
+    .header-info p {
+      font-size: 13px;
+      margin: 10px 0 13px 0px;
+  }
+
+  #pg3{
+    display: none;
+  }
+
+  .galeria-mobile{
+    width: 100%;
+    display: inline-flex;
+    overflow: scroll;
+    border: 1px solid black;
+  }
+
+  .galeria-mobile div{
+    padding: 10px;
+    height: auto;
+  }
+  .galeria-mobile img{
+    width: 200px;
+  }
+
+  .servicos{
+    overflow: hidden;
+  }
+
+  .block-sevicos1, .block-sevicos2{
+    width: 99%;
+    padding: 20px 10px 20px;
+  }
+
+  .block-sevicos1{
+    margin-top: 20px;
+  }
+
+  .servicos .img-servicos{
+    height: 500px;
+    width: 98%;
+  }
+
+  .galeria-flex > div {
+    flex: 1 1 108px;
+  }
+
+  .form-group >  input{
+    margin-bottom: 10px;
+  }
+
+  .desc-contato{
+    margin-top: 30px;
+  }
+
+  .redes-sociais img {
+    width: 15%;
+  }
+
+  .form-group {
+    margin-bottom: 0rem;
+}
+.form-group input {
+  margin-bottom: 1rem;
+}
+
+#btn-enviar{
+  margin-top: 20px;
+}
+}
+
+@media (max-width: 570px){
+  
+.header-info{
+  display: none;
+}
+
+.header {
+  top: 0px;
+}
+
+.galeria {
+  margin-top: 95px;
+}
+
+.servicos .img-servicos{
+  margin: 0 auto;
+}
+
+}

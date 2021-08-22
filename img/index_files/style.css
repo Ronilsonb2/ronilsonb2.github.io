@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+  transition: all 0.5s;
+  width: 0;
+}
+
+
+body a{
+	position: absolute;
+	color: #000000;
+}
+/**************
+	Library
+*************/
+
+	.op{
+		opacity: 0;
+	}
+
+	.op._in{
+		opacity: 1;
+	}
+
+	.up{
+		opacity: 0;
+		transform: translateY(20px)
+	}
+
+  .up._in{
+    opacity: 1;
+    transform: translateY(0px)
+  }
+
+  /*____________________________*/
+
+  .scale{
+    opacity: 0;
+    transform: scale(0.4)
+  }
+
+  .scale._in{
+    opacity: 1;
+    transform: scale(1)
+  }
+  .right{
+    opacity: 0;
+    transform: translateX(60px)
+  }
+
+  .right._in{
+    opacity: 1;
+    transform: translatex(0px)
+  }
+
+  .left{
+    opacity: 0;
+    transform: translateX(60px)
+  }
+
+  .left._in{
+    opacity: 1;
+    transform: translateX(0px)
+  }
+  /*____________________________*/
+
+	.scale{
+    transform: scale(1);
+  }
+
+  .scale._in{
+    transform: scale(1.2);
+  }
+
+  .disappear{
+    display: none;
+  }
+
+  /*____________________________*/
+
+
+.banner{
+	width: 726px;
+	height: 88px;
+	position: relative;
+  overflow: hidden;
+  background-color: #8c725b;
+  border: 1px solid black;
+}
+
+.f1_bg {
+  background-image: url("bg1.jpg");
+  position: absolute;
+  left: 290px;
+  top: 0px;
+  width: 438px;
+  height: 90px;
+  transform: scale(1);
+  z-index: 1;
+}
+.f1_bg._in {
+  transform: scale(1.3);
+  transition: 8s;
+}
+
+.f2_bg {
+  background-image: url("bg2.jpg");
+  position: absolute;
+  left: 290px;
+  top: 0px;
+  width: 438px;
+  height: 90px;
+  transform: scale(1);
+  display: none;
+  z-index: 2;
+}
+.f2_bg._in {
+  transform: scale(1.3);
+  transition: 8s;
+}
+
+.f3_bg {
+  background-image: url("bg3.jpg");
+  position: absolute;
+  left: 295px;
+  top: 0px;
+  width: 433px;
+  height: 90px;
+  transform: scale(1);
+  display: none;
+  z-index: 3;
+}
+.f3_bg._in {
+  transform: scale(1.3);
+  transition: 8s;
+}
+
+.f4_bg {
+  background-image: url("bg4.jpg");
+  position: absolute;
+  left: 290px;
+  top: 0px;
+  width: 438px;
+  height: 90px;
+  transform: scale(1);
+  display: none;
+  z-index: 4;
+}
+
+.f4_bg._in {
+  transform: scale(1.3);
+  transition: 8s;
+}
+
+.display_block{
+  display: block !important;
+}
+
+.display_none{
+  display: none !important;
+}
+.retangulo {
+  background-image: url("retangulo.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 295px;
+  height: 90px;
+  z-index: 5;
+}
+.a1 {
+  background-image: url("a1.png");
+  position: absolute;
+  left: 39px;
+  top: 15px;
+  width: 208px;
+  height: 12px;
+  z-index: 6;
+}
+.a2 {
+  background-image: url("a2.png");
+  position: absolute;
+  left: 42px;
+  top: 34px;
+  width: 202px;
+  height: 12px;
+  z-index: 7;
+}
+.cta {
+  background-image: url("cta.png");
+  position: absolute;
+  left: 100px;
+  top: 54px;
+  width: 89px;
+  height: 26px;
+  z-index:8;
+}
+.b1 {
+  background-image: url("b1.png");
+  position: absolute;
+  left: 32px;
+  top: 12px;
+  width: 230px;
+  height: 15px;
+  z-index: 25;
+}
+.b2 {
+  background-image: url("b2.png");
+  position: absolute;
+  left: 90px;
+  top: 33px;
+  width: 115px;
+  height: 11px;
+  z-index: 24;
+}
+.cta2 {
+  background-image: url("cta2.png");
+  position: absolute;
+  left: 432px;
+  top: 34px;
+  width: 107px;
+  height: 31px;
+  z-index: 38;
+}
+.c1 {
+  background-image: url("c1.png");
+  position: absolute;
+  left: 38px;
+  top: 24px;
+  width: 332px;
+  height: 14px;
+  z-index: 39;
+}
+.c2 {
+  background-image: url("c2.png");
+  position: absolute;
+  left: 48px;
+  top: 48px;
+  width: 317px;
+  height: 19px;
+  z-index: 40;
+}
+.logo {
+  background-image: url("logo.png");
+  position: absolute;
+  left: 586px;
+  top: 32px;
+  width: 118px;
+  height: 28px;
+  z-index: 41;
+}

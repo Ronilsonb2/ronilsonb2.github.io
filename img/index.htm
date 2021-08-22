@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	 
+	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="ad.size" content="width=300,height=50">
+	<link rel="stylesheet" href="./index_files/style.css">
+	<script type="text/javascript">
+		var clickTag = "http://www.google.com";
+	</script>
+</head>
+
+<body>
+<a href="javascript:window.open(window.clickTag); void(0)">
+	<div class="banner">
+		<div class="f1_bg "></div>
+		<div class="box1">
+			<div class="a1 up"></div>
+			<div class="a2 up"></div>
+		</div>
+		
+
+		<div class="box2">
+			<div class="b1 up"></div>
+			<div class="b2 up"></div>
+			<div class="cta scale"></div>
+		</div>
+		<div class="f2_bg"></div>
+
+		<div class="box3">
+			<div class="c1 up"></div>
+			<div class="c2 up"></div>
+		</div>
+
+		<div class="cta2 scale"></div>
+		<div class="f3_bg"></div>
+
+		<div class="logo scale"></div>
+		<div class="retangulo"></div>
+
+	</div>
+</a>
+
+
+
+<script type="text/javascript">
+
+	/* START */
+
+		var animation,
+			currentTime, box1, box2, box3, cta2,
+			a1, a2, b1, b2, c1, c2, cta, f1_bg, f2_bg, f3_bg,logo, retangulo;
+
+		/** Functions ***/
+
+			function startStep1(){
+				currentTime = 0;
+				clearInterval(animation);
+				animation = setInterval( step1,  100);
+			}
+
+			function startStep2(){
+				currentTime = 0;
+				clearInterval(animation);
+				animation = setInterval( step2,  100);
+			}
+			function startStep3(){
+				currentTime = 0;
+				clearInterval(animation);
+				animation = setInterval( step3,  100);
+			}
+
+			function startStep4(){
+				currentTime = 0;
+				clearInterval(animation);
+				animation = setInterval( step4,  100);
+			}
+
+
+		function initAnimation(){
+			box1 = document.querySelector('.box1');
+			a1 = document.querySelector('.a1');
+			a2 = document.querySelector('.a2');
+
+			box2 = document.querySelector('.box2');
+			b1 = document.querySelector('.b1');
+			b2 = document.querySelector('.b2');
+
+			cta = document.querySelector('.cta');
+			cta2 = document.querySelector('.cta2');
+
+			box3 = document.querySelector('.box3');	
+			c1 = document.querySelector('.c1');
+			c2 = document.querySelector('.c2');
+
+			f1_bg = document.querySelector('.f1_bg');
+			f2_bg = document.querySelector('.f2_bg');
+			f3_bg = document.querySelector('.f3_bg');
+			logo = document.querySelector('.logo');
+			retangulo = document.querySelector('.retangulo');
+
+			
+			startStep1();
+		}
+
+
+	function step1(){
+		currentTime = parseFloat( (currentTime + 0.1).toFixed(2) );
+
+		if (currentTime == 0.1) {
+			return f1_bg.classList.add('_in');
+		}
+		
+		if (currentTime == 0.3) {
+			return retangulo.classList.add('_in');
+		}
+
+		if (currentTime == 0.5) {
+			return a1.classList.add('_in');
+		}
+
+		if (currentTime == 0.6) {
+			return a2.classList.add('_in');
+		}
+
+		if (currentTime == 0.8) {
+			return cta.classList.add('_in');
+		}
+
+		if (currentTime == 2.6) {
+			f1_bg.classList.add('_op');
+			return startStep2();
+		}
+	}
+
+	function step2(){
+		currentTime = parseFloat( (currentTime + 0.1).toFixed(2) );
+
+		if (currentTime == 0.1) {
+			f1_bg.classList.add('display_none');
+			return f2_bg.classList.add('display_block');
+		}
+
+		if (currentTime == 0.2) {
+			return f2_bg.classList.add('_in');
+		}		
+
+		if (currentTime == 2.4) {
+			return box1.classList.add('op');
+		}
+
+		if (currentTime == 2.6) {
+			f2_bg.classList.add('op');
+			return startStep3();
+		}
+
+	}
+
+	function step3(){
+		currentTime = parseFloat( (currentTime + 0.1).toFixed(2) );
+
+		if (currentTime == 0.1) {
+			f2_bg.classList.add('display_none');
+			f3_bg.classList.add('display_block');
+			return b1.classList.add('_in');
+		}
+
+		if (currentTime == 0.2) {
+			b2.classList.add('_in');
+			return f3_bg.classList.add('_in');
+		}
+
+		if (currentTime == 4) {
+			return box2.classList.add('op');
+		}
+		if (currentTime == 4.4) {
+			f3_bg.classList.add('display_none');
+			f3_bg.classList.add('op');
+			return startStep4();
+		}
+
+	}
+
+}
+
+	function step4(){
+		currentTime = parseFloat( (currentTime + 0.1).toFixed(2) );
+
+		if (currentTime == 0.1) {
+			return logo.classList.add('_in');
+		}
+
+		if (currentTime == 0.4) {
+			return c1.classList.add('_in');
+		}
+
+		if (currentTime == 0.6) {
+			return c2.classList.add('_in');
+		}
+
+		if (currentTime == 0.7) {
+			return cta2.classList.add('_in');
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+	document.addEventListener("DOMContentLoaded", function(event) {
+		initAnimation();
+	});
+</script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
